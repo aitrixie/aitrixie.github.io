@@ -19,7 +19,7 @@ h6 {
 }
 @font-face {
     font-family: Poppins;
-    src: url('Poppins/Poppins-Regular.ttf');
+    src: url('Poppins-Regular.ttf');
 }
 
 .site-header .navbar-nav .nav-link {
