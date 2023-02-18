@@ -8,28 +8,28 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Main.css -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 <body>
     <header class="site-header">
         <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
-            <div class="container">
-                <a class="navbar-brand mr-4" href="/" style="font-size:30px; font-family: GrandHotel">Trixie</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
-                    aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarToggle">
-                    <div class="navbar-nav mr-auto">
-                    </div>
-                    <!-- Navbar Right Side -->
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="/home">Home</a>
-                        <a class="nav-item nav-link" href="/resumes">Resumes</a>
-                        <a class="nav-item nav-link" href="/interviews">Interviews</a>
-                        <a class="nav-item nav-link" href="/about">About</a>
-                        <a class="login-button" href="/login">Log In</a>
-                    </div>
+            <a class="navbar-brand mr-4" href="/" style="font-size:30px; font-family: GrandHotel">Trixie</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+                aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <div class="navbar-nav mr-auto">
+                </div>
+                <!-- Navbar Right Side -->
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="/home">Home</a>
+                    <a class="nav-item nav-link" href="/resumes">Resumes</a>
+                    <a class="nav-item nav-link" href="/interviews">Interviews</a>
+                    <a class="nav-item nav-link" href="/about">About</a>
+                    <a class="login-button" href="/login">Log In</a>
                 </div>
             </div>
         </nav>
@@ -46,36 +46,121 @@
     Trixie is built on the promise that practice & preparation are crucial to get over your anxieties when attending an
     interview.
 </p>
-<div class="interview" >
-    <div class="interview-text">
-        <div class="interview-main-text">
-            Master the interview & land a job worth loving.
+<div class="fancy-cmp">
+
+    <div class="interview">
+        <div class="interview-text">
+            <div class="interview-main-text">
+                Master the interview & land a job worth loving.
+            </div>
+            <div class="interview-sub-text">
+                Simulate realistic interviews for over 120 different job positions and level up your skills in no time.
+            </div>
+            <div class="learn-button">
+                Learn more
+            </div>
         </div>
-        <div class="interview-sub-text">
-            Simulate realistic interviews for over 120 different job positions and level up your skills in no time.
-        </div>
-        <div class="learn-button">
-            Learn more
+        <div class="pic-interview">
         </div>
     </div>
-    <div class="pic-interview">
+
+    <div class="interview-right">
+        <div class="pic-resumes">
+        </div>
+        <div class="interview-text">
+            <div class="interview-main-text">
+                Get expert feedback on your resume, instantly
+            </div>
+            <div class="interview-sub-text">
+                Our free AI-powered resume checker scores your resume on key criteria recruiters and hiring managers look for. Get
+                actionable steps to revamp your resume and land more interviews.
+            </div>
+            <div class="learn-button">
+                Learn more
+            </div>
+        </div>
+    </div>
+
+    <div class="interview">
+        <div class="third-section">
+            <div class="f1-section">
+                <div class="interview-main-text">
+                    Build interview confidence.
+                </div>
+                <div class="interview-sub-text">
+                    We give you everything you need to master your interview skills in less time than any other option, so you can
+                    walk into
+                    your interview with confidence.
+                </div>
+                <div class="interview-main-text">
+                    Accelerate your career & earn more.
+                </div>
+                <div class="interview-sub-text">
+                    Master the skill of interviewing by practicing it just like you practice your trade and give your career a
+                    boost.
+                </div>
+            </div>
+            
+            <div class="f2-section">
+                <div class="interview-main-text">
+                    Get hired faster.
+                </div>
+                <div class="interview-sub-text">
+                    Our simulator is optimized to help you master your interview skills in the most efficient way possible, so you
+                    can be
+                    prepared to ace the interview in no time.
+                </div>
+                <div class="interview-main-text">
+                    Land the job you've been dreaming of.
+                </div>
+                <div class="interview-sub-text">
+                    Gain realistic interview experience and master the skills you need to wow your employers and beat out the
+                    competition.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="interview-right">
+        <div class="pic-company">
+        </div>
+        <div class="interview-text">
+            <div class="interview-main-text">
+                Both Companies and
+                Candidates can be
+                benifited
+            </div>
+            <div class="interview-sub-text">
+                Our free AI-powered resume checker scores your resume on key criteria recruiters and hiring managers look for. Get
+                actionable steps to revamp your resume and land more interviews.
+            </div>
+            <div class="learn-button">
+                Learn more
+            </div>
+        </div>
     </div>
 </div>
-<div class="interview-right">
-    <div class="pic-interview">
+<p style="font-family: PoppinsBold; font-size: 60px; text-align: center; color: white; margin-top: 5%;">Top Recruiters</p>
+    <div class="footers">
+        <footer class="py-4 my-0">
+            <p class="trixie-font">Trixie</p>
+            <ul class="nav justify-content-center pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Contact Us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Terms</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Privacy</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">About</a></li>
+            </ul>
+            <ul class="nav justify-content-center pb-3 mb-4">
+                <li class="color:white"><a class="link-dark" href="#"><i class="bi bi-twitter"></i></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-linkedin fa-5x"></i></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook"></i></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram"></i></a></li>
+                <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-envelope"></i></a></li>
+            </ul>
+            <p class="text-center" style="font-family: PoppinsLight; font-size: smaller;">&copy; 2023 Trixie, All Rights Reserved. | Trivandrum, Kerala, India.</p>
+        </footer>
     </div>
-    <div class="interview-text">
-        <div class="interview-main-text">
-            Master the interview & land a job worth loving.
-        </div>
-        <div class="interview-sub-text">
-            Simulate realistic interviews for over 120 different job positions and level up your skills in no time.
-        </div>
-        <div class="learn-button">
-            Learn more
-        </div>
-    </div>
-</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
