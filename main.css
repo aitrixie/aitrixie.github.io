@@ -23,17 +23,17 @@ h6 {
 }
 @font-face {
     font-family: Poppins;
-    src: url('Poppins/Poppins-Regular.ttf');
+    src: url('Poppins-Regular.ttf');
 }
 
 @font-face {
     font-family: PoppinsBold;
-    src: url('Poppins/Poppins-Bold.ttf');
+    src: url('Poppins-Bold.ttf');
 }
 
 @font-face {
     font-family: PoppinsLight;
-    src: url('Poppins/Poppins-Light.ttf');
+    src: url('Poppins-Light.ttf');
 }
 
 
